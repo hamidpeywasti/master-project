@@ -16,11 +16,12 @@ This project is based on the open-source repository [two-path-noise-lab-plant-di
 
 For the purpose of my Master's thesis, I modified and extended the original architecture in the following ways:
 
-- Adapted the dual-branch structure for improved feature separation between L (grayscale) and AB (color) channels.
-- Simplified or restructured parts of the architecture for better performance and reduced overfitting.
-- Customized preprocessing steps, data loading, and training pipeline to fit my own dataset.
-- Tuned hyperparameters and restructured evaluation scripts.
+- Increased the number of convolutional layers in each path from **three to five** to enable deeper and more refined feature extraction.
+- Adapted the dual-branch structure for better separation between L (grayscale) and AB (color) channels.
+- Reorganized parts of the model architecture to improve training stability and reduce overfitting.
+- Customized the data preprocessing pipeline, data loading, and training loops to suit my own dataset.
+- Addressed significant **class imbalance and bias** in the original dataset by rebalancing the samples and introducing augmentation techniques.
+- Tuned hyperparameters and adjusted evaluation metrics for improved model performance on real-world scenarios.
 
-These modifications were made to tailor the model to my research objective: improving classification accuracy and generalization on real-world plant disease datasets. All changes were implemented by myself as part of the experimental work of my thesis.
-
+These modifications were made to tailor the model to my thesis goal: improving classification accuracy and generalization performance on real-world plant disease datasets. All changes were implemented by myself as part of my academic research.
 
